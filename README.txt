@@ -1,9 +1,9 @@
-== Linux ==
+== Linux (obsoleted) ==
 
 $ cd unix
 $ make
 
-== Mac ==
+== Mac (obsoleted) ==
 
 Build on 10.5 Prefered
 
@@ -14,6 +14,6 @@ $ make release (or debug)
 
 == Windows ==
 
-To build gstdirectsoundsink, DirectX 9.0 SDK October 2004 Update must
-be unpacked (not installed) in dxsdk_oct2004. Download URL:
-http://www.microsoft.com/downloads/details.aspx?FamilyId=B7BC31FA-2DF1-44FD-95A4-C2555446AED4&displaylang=en
+To build gstdirectsoundsink, DirectX 9.0 SDK October 2004 Update
+must be unpacked (not installed) in dxsdk_oct2004. Download URL:
+http://www.microsoft.com/download/en/details.aspx?&id=19320
