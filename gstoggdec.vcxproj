@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AAAAD54-9FC6-4DA1-A80C-311D9C3F7227}</ProjectGuid>
+    <RootNamespace>gstoggdec</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>include\glib-2.0;include\gstreamer-0.10;..\gst-plugins-base\gst-libs;..\gst-plugins-base\win32\common;..\libogg\include;..\libtheora\include;..\libvorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;HAVE_CONFIG_H;OPERA_MINIMAL_GST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>$(ProjectDir)src\msvc_pragmas.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\gst-plugins-base\ext\ogg\gstoggdemux.c" />
+    <ClCompile Include="..\gst-plugins-base\ext\ogg\gstoggstream.c" />
+    <ClCompile Include="..\gst-plugins-base\ext\ogg\vorbis_parse.c" />
+    <ClCompile Include="..\gst-plugins-base\ext\theora\gsttheoradec.c" />
+    <ClCompile Include="..\gst-plugins-base\ext\vorbis\gstvorbiscommon.c" />
+    <ClCompile Include="..\gst-plugins-base\ext\vorbis\gstvorbisdec.c" />
+    <ClCompile Include="..\gst-plugins-base\ext\vorbis\gstvorbisdeclib.c" />
+    <ClCompile Include="src\gstoggdec.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="gstreamer.vcxproj">
+      <Project>{026bc789-5149-4bec-8e21-7fe4609833e1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libogg.vcxproj">
+      <Project>{61aff036-1199-40e1-a5ca-f792fa6a5b43}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libtheora.vcxproj">
+      <Project>{5516185f-ca4b-40a7-b5ec-9f4fa1be9e6c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libvorbis.vcxproj">
+      <Project>{e55df46b-bbea-42c1-af9e-5ec6e0e53e5e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

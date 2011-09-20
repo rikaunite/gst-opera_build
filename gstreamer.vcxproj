@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{026BC789-5149-4BEC-8E21-7FE4609833E1}</ProjectGuid>
+    <RootNamespace>gstreamer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>include\glib-2.0;include\gstreamer-0.10;..\gst-plugins-good\gst-libs;..\gst-plugins-good\win32\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)src\msvc_pragmas.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>gstreamer.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dummy.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gstreamer.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="glib.vcxproj">
+      <Project>{e01b37f4-899b-41bc-b032-c0ab899aa059}</Project>
+    </ProjectReference>
+    <ProjectReference Include="gmodule.vcxproj">
+      <Project>{ca037400-07a8-43d1-b27e-f6956f33be53}</Project>
+    </ProjectReference>
+    <ProjectReference Include="gobject.vcxproj">
+      <Project>{a9c9067a-175c-4cc8-bcfa-92e692ba4d22}</Project>
+    </ProjectReference>
+    <ProjectReference Include="gthread.vcxproj">
+      <Project>{05dc90e8-e5cc-4103-b67c-b12cc43d6a4e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstaudio.vcxproj">
+      <Project>{efafe900-aa59-468e-95bb-663c2301a351}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstbase.vcxproj">
+      <Project>{17a67fba-e136-4f0a-b201-3f5b40d3a224}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstbasevideo.vcxproj">
+      <Project>{86ddda86-f400-48d9-ad53-7be3ac7363b9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstinterfaces.vcxproj">
+      <Project>{1eed3985-0472-458a-b512-635a8b05a6c8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstpbutils.vcxproj">
+      <Project>{0520372c-7ada-4a7c-b792-66a483a47192}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstreamer.vcxproj">
+      <Project>{45b6cc31-90ca-49e4-817a-733e347f0d58}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstriff.vcxproj">
+      <Project>{f9f0826a-4275-45d9-98a6-690eefd8c212}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgsttag.vcxproj">
+      <Project>{958c7fbb-6624-48e7-a13d-f019c918156a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libgstvideo.vcxproj">
+      <Project>{b8e7772b-4bf2-40f4-93ef-3e7161dc287c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

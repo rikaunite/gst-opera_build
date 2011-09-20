@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AEF235B-9AD8-4830-8E6C-E6A5C4CF8E67}</ProjectGuid>
+    <RootNamespace>libvpx</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\vsyasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\libvpx;..\libvpx\vp8\common;..\libvpx\vp8\decoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>$(ProjectDir)src\msvc_pragmas.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <YASM>
+      <IncludePaths>..\libvpx;%(IncludePaths)</IncludePaths>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libvpx\vp8\common\alloccommon.c" />
+    <ClCompile Include="..\libvpx\vp8\common\asm_com_offsets.c" />
+    <ClCompile Include="..\libvpx\vp8\common\blockd.c" />
+    <ClCompile Include="..\libvpx\vp8\common\debugmodes.c" />
+    <ClCompile Include="..\libvpx\vp8\common\entropy.c" />
+    <ClCompile Include="..\libvpx\vp8\common\entropymode.c" />
+    <ClCompile Include="..\libvpx\vp8\common\entropymv.c" />
+    <ClCompile Include="..\libvpx\vp8\common\extend.c" />
+    <ClCompile Include="..\libvpx\vp8\common\filter.c" />
+    <ClCompile Include="..\libvpx\vp8\common\findnearmv.c" />
+    <ClCompile Include="..\libvpx\vp8\common\generic\systemdependent.c" />
+    <ClCompile Include="..\libvpx\vp8\common\idctllm.c" />
+    <ClCompile Include="..\libvpx\vp8\common\invtrans.c" />
+    <ClCompile Include="..\libvpx\vp8\common\loopfilter.c" />
+    <ClCompile Include="..\libvpx\vp8\common\loopfilter_filters.c" />
+    <ClCompile Include="..\libvpx\vp8\common\mbpitch.c" />
+    <ClCompile Include="..\libvpx\vp8\common\modecont.c" />
+    <ClCompile Include="..\libvpx\vp8\common\modecontext.c" />
+    <ClCompile Include="..\libvpx\vp8\common\postproc.c" />
+    <ClCompile Include="..\libvpx\vp8\common\quant_common.c" />
+    <ClCompile Include="..\libvpx\vp8\common\recon.c" />
+    <ClCompile Include="..\libvpx\vp8\common\reconinter.c" />
+    <ClCompile Include="..\libvpx\vp8\common\reconintra.c" />
+    <ClCompile Include="..\libvpx\vp8\common\reconintra4x4.c" />
+    <ClCompile Include="..\libvpx\vp8\common\setupintrarecon.c" />
+    <ClCompile Include="..\libvpx\vp8\common\swapyv12buffer.c" />
+    <ClCompile Include="..\libvpx\vp8\common\treecoder.c" />
+    <ClCompile Include="..\libvpx\vp8\common\x86\loopfilter_x86.c" />
+    <ClCompile Include="..\libvpx\vp8\common\x86\recon_wrapper_sse2.c" />
+    <ClCompile Include="..\libvpx\vp8\common\x86\vp8_asm_stubs.c" />
+    <ClCompile Include="..\libvpx\vp8\common\x86\x86_systemdependent.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\asm_dec_offsets.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\dboolhuff.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\decodemv.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\decodframe.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\dequantize.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\detokenize.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\generic\dsystemdependent.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\idct_blk.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\onyxd_if.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\reconintra_mt.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\threading.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\x86\idct_blk_mmx.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\x86\idct_blk_sse2.c" />
+    <ClCompile Include="..\libvpx\vp8\decoder\x86\x86_dsystemdependent.c" />
+    <ClCompile Include="..\libvpx\vp8\vp8_dx_iface.c" />
+    <ClCompile Include="..\libvpx\vpx\src\vpx_codec.c" />
+    <ClCompile Include="..\libvpx\vpx\src\vpx_decoder.c" />
+    <ClCompile Include="..\libvpx\vpx\src\vpx_decoder_compat.c" />
+    <ClCompile Include="..\libvpx\vpx\src\vpx_image.c" />
+    <ClCompile Include="..\libvpx\vpx_config.c" />
+    <ClCompile Include="..\libvpx\vpx_mem\vpx_mem.c" />
+    <ClCompile Include="..\libvpx\vpx_ports\x86_cpuid.c" />
+    <ClCompile Include="..\libvpx\vpx_scale\generic\gen_scalers.c" />
+    <ClCompile Include="..\libvpx\vpx_scale\generic\scalesystemdependent.c" />
+    <ClCompile Include="..\libvpx\vpx_scale\generic\vpxscale.c" />
+    <ClCompile Include="..\libvpx\vpx_scale\generic\yv12config.c" />
+    <ClCompile Include="..\libvpx\vpx_scale\generic\yv12extend.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="..\libvpx\vp8\common\x86\idctllm_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\idctllm_sse2.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\iwalsh_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\iwalsh_sse2.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\loopfilter_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\loopfilter_sse2.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\postproc_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\postproc_sse2.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\recon_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\recon_sse2.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\subpixel_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\subpixel_sse2.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\common\x86\subpixel_ssse3.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vp8\decoder\x86\dequantize_mmx.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vpx_config.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vpx_ports\emms.asm">
+      <FileType>Document</FileType>
+    </YASM>
+    <YASM Include="..\libvpx\vpx_ports\x86_abi_support.asm">
+      <FileType>Document</FileType>
+    </YASM>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\vsyasm.targets" />
+  </ImportGroup>
+</Project>

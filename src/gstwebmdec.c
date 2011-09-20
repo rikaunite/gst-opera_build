@@ -33,7 +33,7 @@ plugin_init (GstPlugin * plugin)
   if (!gst_matroska_demux_plugin_init (plugin))
       return FALSE;
 
-  if (!gst_element_register (plugin, "opera_vp8dec", GST_RANK_PRIMARY + 1,
+  if (!gst_element_register (plugin, "vp8dec", GST_RANK_PRIMARY,
           gst_vp8_dec_get_type ()))
     return FALSE;
 

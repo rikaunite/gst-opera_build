@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E55DF46B-BBEA-42C1-AF9E-5EC6E0E53E5E}</ProjectGuid>
+    <RootNamespace>libvorbis</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\libogg\include;..\libvorbis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>$(ProjectDir)src\msvc_pragmas.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libvorbis\lib\bitrate.c" />
+    <ClCompile Include="..\libvorbis\lib\block.c" />
+    <ClCompile Include="..\libvorbis\lib\codebook.c" />
+    <ClCompile Include="..\libvorbis\lib\envelope.c" />
+    <ClCompile Include="..\libvorbis\lib\floor0.c" />
+    <ClCompile Include="..\libvorbis\lib\floor1.c" />
+    <ClCompile Include="..\libvorbis\lib\lookup.c" />
+    <ClCompile Include="..\libvorbis\lib\lpc.c" />
+    <ClCompile Include="..\libvorbis\lib\lsp.c" />
+    <ClCompile Include="..\libvorbis\lib\mapping0.c" />
+    <ClCompile Include="..\libvorbis\lib\mdct.c" />
+    <ClCompile Include="..\libvorbis\lib\psy.c" />
+    <ClCompile Include="..\libvorbis\lib\registry.c" />
+    <ClCompile Include="..\libvorbis\lib\res0.c" />
+    <ClCompile Include="..\libvorbis\lib\sharedbook.c" />
+    <ClCompile Include="..\libvorbis\lib\smallft.c" />
+    <ClCompile Include="..\libvorbis\lib\synthesis.c" />
+    <ClCompile Include="..\libvorbis\lib\vorbisfile.c" />
+    <ClCompile Include="..\libvorbis\lib\window.c" />
+    <ClCompile Include="src\vorbis_info.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

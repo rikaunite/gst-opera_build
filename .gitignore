@@ -1,9 +1,9 @@
 *~
-*.vcproj.*.user
-gst-opera.ncb
+*.vcxproj.user
+gst-opera.sdf
+gst-opera.opensdf
 gst-opera.suo
-gstreamer.def
-gstreamer-dbg.def
-Debug/
-Release/
 dxsdk_oct2004/
+include/
+ipch/
+Release/
