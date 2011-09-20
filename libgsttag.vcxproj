@@ -57,6 +57,7 @@
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\tag\gstxmptag.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\tag\lang.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\tag\tags.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\tag\xmpwriter.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

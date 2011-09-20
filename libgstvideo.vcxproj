@@ -66,6 +66,7 @@ copy /y ..\gst-plugins-base\win32\common\video-enumtypes.h ..\gst-plugins-base\g
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\convertframe.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\gstvideofilter.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\gstvideosink.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\video-enumtypes.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\video.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -27,5 +27,8 @@
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\gstvideofilter.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\video\video-enumtypes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

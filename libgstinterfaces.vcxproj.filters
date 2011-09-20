@@ -27,6 +27,36 @@
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\propertyprobe.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\colorbalance.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\colorbalancechannel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\navigation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\streamvolume.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\tuner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\tunerchannel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\tunernorm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\videoorientation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\xoverlay.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\interfaces-enumtypes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\interfaces-marshal.c">
       <Filter>Source Files</Filter>
     </ClCompile>

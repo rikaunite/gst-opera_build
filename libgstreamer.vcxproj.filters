@@ -174,5 +174,17 @@
     <ClCompile Include="..\gstreamer\gst\gstregistry.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gstreamer\gst\gstpluginloader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\gst\gstregistrybinary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\gst\gstregistrychunks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\gst\gstxml.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

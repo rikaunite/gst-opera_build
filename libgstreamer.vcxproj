@@ -154,11 +154,14 @@ copy /y ..\gstreamer\gst\math-compat.h include\gstreamer-0.10\gst
     <ClCompile Include="..\gstreamer\gst\gstpipeline.c" />
     <ClCompile Include="..\gstreamer\gst\gstplugin.c" />
     <ClCompile Include="..\gstreamer\gst\gstpluginfeature.c" />
+    <ClCompile Include="..\gstreamer\gst\gstpluginloader.c" />
     <ClCompile Include="..\gstreamer\gst\gstpoll.c" />
     <ClCompile Include="..\gstreamer\gst\gstpreset.c" />
     <ClCompile Include="..\gstreamer\gst\gstquark.c" />
     <ClCompile Include="..\gstreamer\gst\gstquery.c" />
     <ClCompile Include="..\gstreamer\gst\gstregistry.c" />
+    <ClCompile Include="..\gstreamer\gst\gstregistrybinary.c" />
+    <ClCompile Include="..\gstreamer\gst\gstregistrychunks.c" />
     <ClCompile Include="..\gstreamer\gst\gstsegment.c" />
     <ClCompile Include="..\gstreamer\gst\gststructure.c" />
     <ClCompile Include="..\gstreamer\gst\gstsystemclock.c" />
@@ -171,6 +174,7 @@ copy /y ..\gstreamer\gst\math-compat.h include\gstreamer-0.10\gst
     <ClCompile Include="..\gstreamer\gst\gsturi.c" />
     <ClCompile Include="..\gstreamer\gst\gstutils.c" />
     <ClCompile Include="..\gstreamer\gst\gstvalue.c" />
+    <ClCompile Include="..\gstreamer\gst\gstxml.c" />
     <ClCompile Include="..\gstreamer\win32\common\dirent.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

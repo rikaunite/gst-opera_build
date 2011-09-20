@@ -56,21 +56,40 @@ copy /y ..\gst-plugins-base\win32\common\interfaces-marshal.h ..\gst-plugins-bas
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>mkdir include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\colorbalance.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\colorbalancechannel.h include\gstreamer-0.10\gst\interfaces
 copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\interfaces-enumtypes.h include\gstreamer-0.10\gst\interfaces
 copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\interfaces-marshal.h include\gstreamer-0.10\gst\interfaces
 copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\mixer.h include\gstreamer-0.10\gst\interfaces
 copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\mixeroptions.h include\gstreamer-0.10\gst\interfaces
 copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\mixertrack.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\navigation.h include\gstreamer-0.10\gst\interfaces
 copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\propertyprobe.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\streamvolume.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\tuner.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\tunernorm.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\tunerchannel.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\videoorientation.h include\gstreamer-0.10\gst\interfaces
+copy /y ..\gst-plugins-base\gst-libs\gst\interfaces\xoverlay.h include\gstreamer-0.10\gst\interfaces
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\colorbalance.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\colorbalancechannel.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\interfaces-enumtypes.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\interfaces-marshal.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\mixer.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\mixeroptions.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\mixertrack.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\navigation.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\propertyprobe.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\streamvolume.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\tuner.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\tunerchannel.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\tunernorm.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\videoorientation.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\interfaces\xoverlay.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

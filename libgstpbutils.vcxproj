@@ -47,11 +47,28 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PreBuildEvent>
+      <Command>copy /y ..\gst-plugins-base\win32\common\pbutils-enumtypes.c ..\gst-plugins-base\gst-libs\gst\pbutils\
+copy /y ..\gst-plugins-base\win32\common\pbutils-enumtypes.h ..\gst-plugins-base\gst-libs\gst\pbutils\
+copy /y ..\gst-plugins-base\win32\common\pbutils-marshal.c ..\gst-plugins-base\gst-libs\gst\pbutils\
+copy /y ..\gst-plugins-base\win32\common\pbutils-marshal.h ..\gst-plugins-base\gst-libs\gst\pbutils\
+copy /y ..\gst-plugins-base\win32\common\gstpluginsbaseversion.h ..\gst-plugins-base\gst-libs\gst\pbutils\
+</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\codec-utils.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\descriptions.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\encoding-profile.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\encoding-target.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\gstdiscoverer-types.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\gstdiscoverer.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\gstpluginsbaseversion.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\install-plugins.c" />
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\missing-plugins.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\pbutils-enumtypes.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\pbutils-marshal.c" />
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\pbutils.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

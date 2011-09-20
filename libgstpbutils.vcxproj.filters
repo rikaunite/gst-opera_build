@@ -24,5 +24,32 @@
     <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\missing-plugins.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\encoding-profile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\encoding-target.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\gstdiscoverer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\gstdiscoverer-types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\gstpluginsbaseversion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\install-plugins.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\pbutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\pbutils-enumtypes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-base\gst-libs\gst\pbutils\pbutils-marshal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
