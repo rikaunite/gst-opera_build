@@ -5,7 +5,7 @@ http://www.microsoft.com/visualstudio/en-us/products/2010-editions/visual-cpp-ex
 http://www.microsoft.com/download/en/details.aspx?id=23691
 
 To build gstdirectsoundsink, DirectX 9.0 SDK October 2004 Update
-must be unpacked (not installed) in dxsdk_oct2004. Download URL:
+or newer must be unpacked (not installed) in dxsdk. Download URL:
 http://www.microsoft.com/download/en/details.aspx?id=19320
 
 To build libvpx, vsyasm must installed. Download URL:
