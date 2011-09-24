@@ -52,10 +52,21 @@
     <ClCompile Include="..\gstreamer\plugins\elements\gstcapsfilter.c" />
     <ClCompile Include="..\gstreamer\plugins\elements\gstelements.c" />
     <ClCompile Include="..\gstreamer\plugins\elements\gstfakesink.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfakesrc.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfdsink.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfdsrc.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfilesink.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfilesrc.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfunnel.c" />
     <ClCompile Include="..\gstreamer\plugins\elements\gstidentity.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstinputselector.c" />
     <ClCompile Include="..\gstreamer\plugins\elements\gstmultiqueue.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstoutputselector.c" />
     <ClCompile Include="..\gstreamer\plugins\elements\gstqueue.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstqueue2.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gsttee.c" />
     <ClCompile Include="..\gstreamer\plugins\elements\gsttypefindelement.c" />
+    <ClCompile Include="..\gstreamer\plugins\elements\gstvalve.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="gstreamer.vcxproj">

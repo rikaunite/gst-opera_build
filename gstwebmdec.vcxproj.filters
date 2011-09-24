@@ -33,5 +33,8 @@
     <ClCompile Include="..\gst-plugins-bad\ext\vp8\gstvp8utils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gst-plugins-good\gst\matroska\lzo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

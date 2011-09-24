@@ -21,5 +21,14 @@
     <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautoaudiosink.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautoaudiosrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautovideosink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautovideosrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

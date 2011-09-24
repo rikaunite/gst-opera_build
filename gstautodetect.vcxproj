@@ -50,7 +50,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautoaudiosink.c" />
+    <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautoaudiosrc.c" />
     <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautodetect.c" />
+    <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautovideosink.c" />
+    <ClCompile Include="..\gst-plugins-good\gst\autodetect\gstautovideosrc.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="gstreamer.vcxproj">

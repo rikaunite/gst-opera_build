@@ -60,6 +60,7 @@
     <ClCompile Include="..\gst-plugins-bad\ext\vp8\gstvp8dec.c" />
     <ClCompile Include="..\gst-plugins-bad\ext\vp8\gstvp8utils.c" />
     <ClCompile Include="..\gst-plugins-good\gst\matroska\ebml-read.c" />
+    <ClCompile Include="..\gst-plugins-good\gst\matroska\lzo.c" />
     <ClCompile Include="..\gst-plugins-good\gst\matroska\matroska-demux.c" />
     <ClCompile Include="..\gst-plugins-good\gst\matroska\matroska-ids.c" />
     <ClCompile Include="src\gstwebmdec.c" />

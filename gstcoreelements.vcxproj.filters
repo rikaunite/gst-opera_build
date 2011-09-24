@@ -36,5 +36,38 @@
     <ClCompile Include="..\gstreamer\plugins\elements\gsttypefindelement.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfakesrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfdsink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfdsrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfilesink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfilesrc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstfunnel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstinputselector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstoutputselector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstqueue2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gsttee.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gstreamer\plugins\elements\gstvalve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

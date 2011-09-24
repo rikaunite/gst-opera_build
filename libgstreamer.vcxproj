@@ -60,19 +60,23 @@ copy /y ..\gstreamer\win32\common\gstversion.h ..\gstreamer\gst
       <Command>mkdir include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\glib-compat.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gst.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstenumtypes.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstversion.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstatomicqueue.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstbin.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstbuffer.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstbufferlist.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstbus.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstcaps.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstchildproxy.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstclock.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstdatetime.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstdebugutils.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstelement.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstelementfactory.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstenumtypes.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gsterror.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstevent.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstfilter.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstformat.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstghostpad.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstindex.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstindexfactory.h include\gstreamer-0.10\gst
@@ -84,13 +88,20 @@ copy /y ..\gstreamer\gst\gstmessage.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstminiobject.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstobject.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstpad.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstpadtemplate.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstparamspecs.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstparse.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstpipeline.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstplugin.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstpluginfeature.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstpluginloader.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstpoll.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstpreset.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstquark.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstquery.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstregistry.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstregistrybinary.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstregistrychunks.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstsegment.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gststructure.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstsystemclock.h include\gstreamer-0.10\gst
@@ -105,15 +116,10 @@ copy /y ..\gstreamer\gst\gsturi.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstutils.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstvalue.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstxml.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstparse.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstcompat.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstconfig.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstformat.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstpadtemplate.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstbus.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstelementfactory.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\gstmacros.h include\gstreamer-0.10\gst
-copy /y ..\gstreamer\gst\gstpluginfeature.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstconfig.h include\gstreamer-0.10\gst
+copy /y ..\gstreamer\gst\gstversion.h include\gstreamer-0.10\gst
 copy /y ..\gstreamer\gst\math-compat.h include\gstreamer-0.10\gst
 </Command>
     </PostBuildEvent>
