@@ -3947,5 +3947,10 @@ gst_base_video_decoder_alloc_src_frame
 gst_base_video_decoder_get_type
 gst_base_video_decoder_set_sync_point
 
+; gstwavpackdec
 
-
+g_checksum_update
+g_checksum_new
+g_checksum_free
+g_checksum_get_digest
+gst_preset_get_type

@@ -99,6 +99,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libgsttag", "libgsttag.vcxp
 		{17A67FBA-E136-4F0A-B201-3F5B40D3A224} = {17A67FBA-E136-4F0A-B201-3F5B40D3A224}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gstwavpackdec", "gstwavpackdec.vcxproj", "{DC89B24A-E571-4B5E-A31C-EEDE06692661}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libwavpack", "libwavpack.vcxproj", "{D346F49C-3037-4C38-88C1-41594873BA4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|Win32 = Release|Win32
@@ -164,6 +168,10 @@ Global
 		{4AEF235B-9AD8-4830-8E6C-E6A5C4CF8E67}.Release|Win32.Build.0 = Release|Win32
 		{958C7FBB-6624-48E7-A13D-F019C918156A}.Release|Win32.ActiveCfg = Release|Win32
 		{958C7FBB-6624-48E7-A13D-F019C918156A}.Release|Win32.Build.0 = Release|Win32
+		{DC89B24A-E571-4B5E-A31C-EEDE06692661}.Release|Win32.ActiveCfg = Release|Win32
+		{DC89B24A-E571-4B5E-A31C-EEDE06692661}.Release|Win32.Build.0 = Release|Win32
+		{D346F49C-3037-4C38-88C1-41594873BA4A}.Release|Win32.ActiveCfg = Release|Win32
+		{D346F49C-3037-4C38-88C1-41594873BA4A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
